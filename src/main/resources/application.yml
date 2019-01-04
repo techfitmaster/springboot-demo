@@ -1,0 +1,26 @@
+#服务配置
+server:
+  port: 8888
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+
+#日志配置
+logging:
+  level:
+    ##选择包路径
+    com.albert: debug
+    org.springframework: debug
+
+#mybatis
+
+mybatis:
+  type-aliases-package: com.albert.pojo
+#  config-location: mapper/*.xml
